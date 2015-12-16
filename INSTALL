@@ -1,0 +1,33 @@
+
+What you need:
+
+  - ocaml (of course, otherwise why have you downloaded wowcamldebug after all?)
+    URL: http://caml.inria.fr/
+    Debian package: ocaml
+
+  - findlib
+    URL: http://www.ocaml-programming.de/
+    Debian package: ocaml-findlib
+
+  - pcre-ocaml
+    URL: http://www.ai.univie.ac.at/~markus/ocaml_sources
+    Debian package: libpcre-ocaml-dev
+
+What you have to do:
+
+  - edit Makefile.conf and customize the following variables:
+    DESTDIR	(where to install wowcamldebug binaries)
+    VIMDIR	(a directory which is in your vim runtimepath, here vim runtime
+		support files and bitmaps for wowcamldebug ugly toolbar will be
+		installed. A good choice is usually ~/.vim)
+
+  - build wowcamldebug:
+
+      make
+
+  - install wowcamldebug binaries
+
+      make install
+
+  - have fun!
+
